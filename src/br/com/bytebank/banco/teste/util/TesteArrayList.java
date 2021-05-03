@@ -9,7 +9,7 @@ import java.util.List;
 
 public class TesteArrayList {
     public static void main(String[] args) {
-        List<Conta> lista = new LinkedList<Conta>();
+        List<Conta> lista = new LinkedList<Conta>(); //Vector , threadSafe usado em varias stacks
 
         Conta contaCorrente = new ContaCorrente(111,222);
         lista.add(contaCorrente);

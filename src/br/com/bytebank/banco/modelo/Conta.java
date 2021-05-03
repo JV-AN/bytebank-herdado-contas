@@ -6,7 +6,7 @@ package br.com.bytebank.banco.modelo;
  * @version 0.1
  * Molde de uma conta para todos os tiipos.
  */
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
     protected double saldo;
     private int agencia;
     private int numero;
@@ -43,6 +43,11 @@ public abstract class Conta {
     }
 
     @Override
+    public int compareTo(Conta o) {
+        return Double.compare(this.saldo,o.saldo);
+    }
+
+    @Override
     public boolean equals(Object ref){
         Conta outra = (Conta) ref;
 
@@ -58,7 +63,7 @@ public abstract class Conta {
         return "{" +
                 "agencia=" + this.agencia +
                 ", numero=" + this.numero +
-                '}';
+                ", Saldo=" + this.saldo +'}';
     }
 
     //getters and setters
