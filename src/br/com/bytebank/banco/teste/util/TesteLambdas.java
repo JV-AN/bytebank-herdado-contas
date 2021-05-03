@@ -49,7 +49,7 @@ public class TesteLambdas {
                             String cli2 = o2.getTitular().getNome();
                             return cli1.compareTo(cli2);
                     };
-                lista.sort(comp);
+               // lista.sort(comp);
                 lista.forEach(System.out::println);
 
             }
