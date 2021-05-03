@@ -4,10 +4,12 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TesteArrayList {
     public static void main(String[] args) {
-        ArrayList<Conta> lista = new ArrayList<Conta>();
+        List<Conta> lista = new LinkedList<Conta>();
 
         Conta contaCorrente = new ContaCorrente(111,222);
         lista.add(contaCorrente);
