@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="bytebank-herdado-contas:jar">
+    <output-path>$USER_HOME$/OneDrive/Área de Trabalho</output-path>
+    <root id="archive" name="bytebank-herdado-contas.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="bytebank-herdado-contas" />
+    </root>
+  </artifact>
+</component>
