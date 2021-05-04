@@ -20,6 +20,7 @@ public class TestePerformance {
             numeros.contains(numero);
         }
 
+
         long fim = System.currentTimeMillis();
 
         long tempoDeExecucao = fim - inicio;

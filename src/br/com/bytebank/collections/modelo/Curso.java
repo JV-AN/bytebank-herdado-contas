@@ -8,6 +8,7 @@ public class Curso {
     private final String curso;
     private final String instrutor;
     private final List<Aula> aulas = new LinkedList<>();
+    private final  Set<Aluno> alunos = new HashSet<>();
 
     public Curso(String curso, String instrutor) {
         this.curso = curso;
@@ -42,6 +43,19 @@ public class Curso {
                 ", aulas=" + aulas +
                 '}';
     }
+
+    public void matricula(Aluno aluno) {
+        this.alunos.add(aluno);
+    }
+
+    public Set<Aluno> getAlunos() {
+        return Collections.unmodifiableSet(alunos);
+    }
+
+    public boolean estaMatriculado(Aluno aluno) {
+        return this.alunos.contains(aluno);
+    }
+
 
     //    public void ordena(){
 //        this.aulas.sort(Comparator.comparing(Aula::getTempo));

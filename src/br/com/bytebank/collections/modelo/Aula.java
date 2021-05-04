@@ -1,8 +1,8 @@
 package br.com.bytebank.collections.modelo;
 
 public class Aula implements Comparable<Aula> {
-    private String titulo;
-    private int tempo;
+    private final String titulo;
+    private final int tempo;
 
     public Aula(String titulo, int tempo) {
         this.titulo = titulo;
